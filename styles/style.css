@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#calculator {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+button {
+    width: 145px;
+    height: 80px;
+    font-size: large;
+}
+
+#zero {
+    width: 290px;
+}
+
+#display {
+    width: 580px;
+    height: 80px;
+    background-color: gray;
+}
+
+.operator {
+    background-color: rgb(255, 166, 0);
+}
