@@ -40,6 +40,13 @@ button {
     position: relative;
 }
 
+#clear {
+    width: 580px;
+    height: 80px;
+    font-size: x-large;
+    background-color: rgb(255, 166, 0);
+}
+
 #display-content {
     position: absolute;
     bottom: 0;

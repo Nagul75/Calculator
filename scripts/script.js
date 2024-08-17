@@ -7,6 +7,8 @@ let displayText = "";
 const equals = document.querySelector("#equals");
 const display = document.querySelector("#display-content");
 
+const clear = document.querySelector("#clear");
+
 const parentDiv = document.querySelector("#calculator");
 parentDiv.addEventListener("click", (e) => {
     let target = e.target;
@@ -126,6 +128,7 @@ parentDiv.addEventListener("click", (e) => {
             } 
         break;
         case "equals": break;
+        case "clear": break;
         case "plus": op += "+";
         display.innerHTML = "";
         break;
@@ -186,10 +189,17 @@ equals.addEventListener("click", () => {
     {
         num1 = parseInt(firstNum);
         num2 = parseInt(secondNum);
-        let result = operate(num1, op, num2);
+        let result = operate(num1, op[0], num2);
         display.innerHTML = result;
         firstNum = "";
         secondNum = "";
         op = "";
     }
 });
+
+clear.addEventListener("click", () => {
+    display.innerHTML = "";
+    firstNum = "";
+    secondNum = "";
+    op = "";
+})
