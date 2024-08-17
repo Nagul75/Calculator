@@ -29,7 +29,17 @@ button {
 #display {
     width: 580px;
     height: 80px;
-    background-color: gray;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    font-size: xx-large;
+    text-align: right;
+    position: relative;
+}
+
+#display-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .operator {

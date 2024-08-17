@@ -25,20 +25,21 @@ parentDiv.addEventListener("click", (e) => {
         break;
         case "zero": inputString + "0";
         break;
-        case "+": inputString + "+";
+        case "plus": inputString + "+";
         break;
-        case "-": inputString + "-";
+        case "minus": inputString + "-";
         break;
-        case "/": inputString + "/";
+        case "divide": inputString + "/";
         break;
-        case "*": inputString + "*";
+        case "multiply": inputString + "*";
         break;
         default:
             alert("INCORRECT INPUT");
+            break;
     }
 })
 
-
+const display = document.querySelector("#display");
 
 
 
